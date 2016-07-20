@@ -1,4 +1,4 @@
-gunicorn
+gunicorn==19.2.1
 geopy==1.11.0
 protobuf==2.6.1
 requests==2.10.0
