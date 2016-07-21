@@ -25,7 +25,7 @@ def get_args():
     parser.add_argument('-a', '--auth-service', type=str.lower, help='Auth Service', default='ptc')
     parser.add_argument('-u', '--username', help='Username', required=True, default='app_runner')
     parser.add_argument('-p', '--password', help='Password', required=False, default='running_app1')
-    parser.add_argument('-l', '--location', type=parse_unicode, help='Location, can be an address or coordinates', required=True, default='40.912356, -73.957198')
+    parser.add_argument('-l', '--location', type=str, help='Location, can be an address or coordinates', required=True, default='40.912356, -73.957198')
     parser.add_argument('-st', '--step-limit', help='Steps', required=True, type=int, default='7')
     group = parser.add_mutually_exclusive_group(required=False)
     group.add_argument('-i', '--ignore', help='Comma-separated list of Pokémon names or IDs to ignore')
