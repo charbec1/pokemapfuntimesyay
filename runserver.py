@@ -15,6 +15,8 @@ from pogom.pgoapi.utilities import get_pos_by_name
 
 log = logging.getLogger(__name__)
 
+app = Pogom(__name__)
+
 
 def start_locator_thread(args):
     search_thread = Thread(target=search_loop, args=(args,))
@@ -57,7 +59,7 @@ if __name__ == '__main__':
     else:
         insert_mock_data(args.location, 6)
 
-    app = Pogom(__name__)
+    #app = Pogom(__name__)
     config['ROOT_PATH'] = app.root_path
     if args.gmaps_key is not None:
         config['GMAPS_KEY'] = args.gmaps_key
