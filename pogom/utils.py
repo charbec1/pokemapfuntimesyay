@@ -15,9 +15,10 @@ from exceptions import APIKeyException
 
 
 def parse_unicode(bytestring):
-    decoded_string = bytestring.decode(sys.getfilesystemencoding())
+    #decoded_string = bytestring.decode(sys.getfilesystemencoding())
     #return decoded_string
-    return "76 Woodland Park Drive, Tenafly, NJ"
+    #return "76 Woodland Park Drive, Tenafly, NJ"
+    return "40.912356, -73.957198"
 
 
 def get_args():
