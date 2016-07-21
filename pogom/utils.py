@@ -16,7 +16,8 @@ from exceptions import APIKeyException
 
 def parse_unicode(bytestring):
     decoded_string = bytestring.decode(sys.getfilesystemencoding())
-    return decoded_string
+    #return decoded_string
+    return "76 Woodland Park Drive, Tenafly, NJ"
 
 
 def get_args():
